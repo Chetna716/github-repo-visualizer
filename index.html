@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repo Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Repo Visualizer</h1>
+        <div class="search-container">
+            <input type="text" id="username" placeholder="Enter GitHub username">
+            <button id="searchBtn">Search</button>
+        </div>
+        
+        <div class="stats-container" id="statsContainer">
+            <div class="stat-card">
+                <i class="fas fa-code-branch"></i>
+                <h3>Repositories</h3>
+                <p id="repoCount">-</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-code-commit"></i>
+                <h3>Total Commits</h3>
+                <p id="commitCount">-</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-code"></i>
+                <h3>Languages</h3>
+                <div id="languagesList">-</div>
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
